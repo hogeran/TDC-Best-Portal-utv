@@ -4,7 +4,7 @@
 		<div class="flex-box flex-box-big">
 			<img src="<?php bloginfo('template_url');?>/img/logo2.png" alt="loggo">
 			<fieldset>
-			<h3>Kompletering från beställare behövs</h3>
+			<h3>Komplettering från beställare behövs</h3>
 			<?php if(have_posts()): while(have_posts()): the_post(); 
 				if (get_field('case_status') == 'Ny'){?>
 <!--					if (get_field('case_status') == 'Nyskapad'){
