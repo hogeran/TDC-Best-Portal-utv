@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
  
-    // jQuery("#primaryPostForm").validate();
+    jQuery("#primaryPostForm").validate();
  
 });

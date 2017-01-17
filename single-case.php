@@ -103,7 +103,7 @@
 			<?php 
 			$delorder = new delorder(get_the_ID());
 			?>
-			<form action="/delorder/" id="delorder-server" method="post">
+			<form action="/best/delorder/" id="delorder-server" method="post">
 			 
 				<input type="hidden" name="order" id="submitted" value=<?php the_title(); ?> >
 				<input type="hidden" name="kundforkortning" id="submitted" value="<?php the_field('kundforkortning'); ?>" >
