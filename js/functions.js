@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+	var sightPref = "/best"
 	$('#cpu-slider').change(function() {
         $('#cpu-output').html('<b>CPU: ' + $(this).val() + ' core</b>');
     });
@@ -8,10 +9,8 @@ $( document ).ready(function() {
 	
 //Omstyrning efter skickat formulär
 	$('div.wpcf7-mail-sent-ok').is(function() {
-        window.location.href = "/case/" + localStorage.getItem("ordernr");
-    });
-	$('div.wpcf7-mail-sent-ng').is(function() {
-        window.location.href = "/case/" + localStorage.getItem("ordernr");
+		window.location.assign( sightPref + "/case/" + localStorage.getItem("ordernr") );
+        //window.location.href = "/case/" + localStorage.getItem("ordernr");
     });
 
 	
@@ -22,7 +21,8 @@ $( document ).ready(function() {
 	});
 	$( "#skapaNyBest" ).click(function() {
 		var ordernr=$("#nyorder").val();
-		window.location.href = "/best/skapa-bestallning/";
+		window.location.assign( sightPref + "/skapa-bestallning/" );
+		//window.location.href = "/best/skapa-bestallning/";
 	});
 	
 //Hämta info från sida
